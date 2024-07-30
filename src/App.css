@@ -41,22 +41,69 @@
   color: #888;
 }
 
+/*All*/
+
+.pageHeader{
+  margin-top: 8svw;
+  color: rgb(11, 1, 24);
+  font-family:'Courier New', Courier, monospace;
+}
+
+#pageDescription{
+  color: rgb(89, 11, 244);
+  font-weight: bolder;
+  font-size: 10pt;
+}
+
+/*------------------------------------*/
+
+/*NavBar*/
+
 .navbar{
   position: fixed;
-  left: 44%;
+  left: 37%;
   top: 15px;
 }
 
 .navbar > .links{
-  margin-right: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 10px;
-  border-width: 5px;
-  border-style: solid;
   border-radius: 50px;
-  border-color: black;
-  background-color: black;
+  background-color: rgb(89, 11, 244);
+  color: rgb(247, 241, 254);
+  font-weight: 500;
 }
 
 .navbar > .links:hover{
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(80, 12, 218);
 }
+/*------------------------------------*/
+
+/*About Me!*/
+
+#linkToContact{
+  background-color: none;
+  color: rgb(64, 44, 245);
+}
+
+/*------------------------------------*/
+
+/*Contact*/
+
+.horizontalRow{
+  line-height: 50%;
+}
+.contactLink{
+  color: rgb(89, 11, 244);
+}
+
+/*------------------------------------*/
+
+/*Footer*/
+
+.footer{
+  color: rgb(89, 11, 244);
+}
+
+/*------------------------------------*/

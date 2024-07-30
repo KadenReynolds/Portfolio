@@ -2,7 +2,7 @@
 function Websites() {
   return(
     <>
-      <h1>Websites</h1>
+      <h1 className="pageHeader">Websites</h1>
     </>
   )
 }
