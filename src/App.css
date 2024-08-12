@@ -67,7 +67,7 @@
   z-index: 1;
   padding: 15px;
   padding-top: 20px;
-  background-color: rgb(247, 241, 254);
+  background-color: white;
   border-radius: 40px;
 }
 
@@ -98,6 +98,7 @@
   aspect-ratio: .2;
   position: relative;
   display: flexbox;
+  margin-top: 5svh;
 }
 
 #backgroundDiv{
@@ -114,8 +115,8 @@
 
 #backgroundDiv > p{
   color: black;
-  font-weight: bold;
-  font-size: 12pt;
+  font-weight: 500;
+  font-size: 15pt;
 }
 
 #backgroundDiv > h3{
@@ -130,7 +131,7 @@
   padding: 20px;
   width: 40svw;
   aspect-ratio: 5;
-  top: 10svh;
+  top: 0svh;
   left: 7svw;
   position: absolute;
   background-color: rgb(89, 11, 244);
@@ -151,10 +152,92 @@
   font-size: 20pt;
   text-transform: uppercase;
 }
+#selfDiv{
+  padding: 20px;
+  width: 40svw;
+  aspect-ratio: 4;
+  top: 40svh;
+  left: -15svw;
+  position: absolute;
+  background-color: rgb(246, 141, 81);
+  text-wrap:pretty;
+  border-radius: 20px;
+}
+
+#selfDiv > p{
+  color: white;
+  font-weight: lighter;
+  font-size: 12pt;
+  padding: 0;
+  margin-top: 0;
+}
+
+#selfDiv > h3{
+  color: white;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 50pt;
+  text-transform: uppercase;
+  margin-bottom:0;
+  margin-top: 3svh;
+}
+
+/*------------------------------------*/
+
+/*MyWebsites*/
+
+/*------------------------------------*/
+
+/*MyGames*/
+
+#gamesMasterDiv{
+  width: 100%;
+  margin: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 50% 45%;
+  grid-template-rows: 50% 45%;
+}
+
+.gameDivs{
+  width: 20svw;
+  aspect-ratio: .8;
+  background-color: rgb(89, 11, 244);
+  margin-right: 5svw;
+  margin-left: 5svw;
+  margin-top: 3.5vsw; 
+  margin-bottom: 3.5svw;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 15px;
+  border-bottom-color: rgb(75, 9, 206);
+  transition: .5s;
+  overflow: hidden;
+}
+
+.gameDivs > *{
+  color: white;
+}
+
+.gameDivs:hover{
+  width: 21svw;
+  aspect-ratio: .8;
+  transition: .5s;
+  margin-right: 4.5svw;
+  margin-left: 4.5svw;
+  margin-top: 2vsw; 
+  margin-bottom: 2svw;
+}
 
 /*------------------------------------*/
 
 /*Contact*/
+
+#contactDiv{
+  /* background-color: white; */
+  /* padding-top: 10px; */
+  border-radius: 10px;
+}
 
 .horizontalRow{
   line-height: 50%;

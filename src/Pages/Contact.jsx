@@ -6,6 +6,7 @@ function Contact() {
       <h5 id="pageDescription"><u>Below is my contact information feel free to contact with questions/concerns</u></h5>
       <br />
       <div id="contactDiv" >
+        <hr className="horizontalRow" />
         <p className="contactLink">Email: kadenreynolds05@gmail.com</p>
         <hr className="horizontalRow" />
         <p className="contactLink">LinkedIn: <a href="https://www.linkedin.com/in/kadenreynolds/" target="_blank">https://www.linkedin.com/in/kadenreynolds/</a></p>
