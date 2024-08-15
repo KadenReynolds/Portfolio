@@ -4,17 +4,20 @@ function Games() {
     {
       id:1,
       name:"blah",
-      timeCreated:"10 Days"
+      timeCreated:"10 Days",
+      status:"Complete"
     },
     {
       id:2,
       name:"blah, blah",
-      timeCreated:"20 Days"
+      timeCreated:"20 Days",
+      status:"In Development"
     },
     {
       id:3,
       name:"blah, blah, blah",
-      timeCreated:"30 Days"
+      timeCreated:"30 Days",
+      status:"Complete"
     },
   ])
   return(
@@ -25,6 +28,7 @@ function Games() {
           return <div className="gameDivs" key={games.id}>
             <h3>{games.name}</h3>
             <h5>{games.timeCreated}</h5>
+            <h5>{games.status}</h5>
           </div>
         })}
       </div>

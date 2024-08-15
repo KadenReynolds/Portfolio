@@ -58,6 +58,24 @@
 /*------------------------------------*/
 
 /*NavBar*/
+.navbarDiv{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(247, 241, 254);
+  z-index: 1;
+  width: 100%;
+  height: 10svh;
+  border-bottom: 2px solid black;
+}
+
+.navHeader{
+  position: absolute;
+  left: 3svw;
+  font-size: 30pt;
+  top: 15px;
+  margin: 0;
+}
 
 .navbar{
   position: fixed;
@@ -69,6 +87,7 @@
   padding-top: 20px;
   background-color: white;
   border-radius: 40px;
+  /* border-bottom: 2px solid black; */
 }
 
 .navbar > .links{
@@ -186,6 +205,45 @@
 
 /*MyWebsites*/
 
+#sitesMasterDiv{
+  width: 100%;
+  margin: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 50% 45%;
+  grid-template-rows: 50% 45%;
+}
+
+.siteDivs{
+  width: 20svw;
+  aspect-ratio: .8;
+  background-color: rgb(89, 11, 244);
+  margin-right: 5svw;
+  margin-left: 5svw;
+  margin-top: 3.5svw; 
+  margin-bottom: 3.5svw;
+  border-radius: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: 15px;
+  border-bottom-color: rgb(75, 9, 206);
+  transition: .5s;
+  overflow: hidden;
+}
+
+.siteDivs > *{
+  color: white;
+}
+
+.siteDivs:hover{
+  width: 21svw;
+  aspect-ratio: .8;
+  transition: .5s;
+  margin-right: 4.5svw;
+  margin-left: 4.5svw;
+  margin-top: 3.8svw; 
+  margin-bottom: 2svw;
+}
+
 /*------------------------------------*/
 
 /*MyGames*/
@@ -205,7 +263,7 @@
   background-color: rgb(89, 11, 244);
   margin-right: 5svw;
   margin-left: 5svw;
-  margin-top: 3.5vsw; 
+  margin-top: 3.5svw; 
   margin-bottom: 3.5svw;
   border-radius: 10px;
   border-bottom-style: solid;
@@ -225,7 +283,7 @@
   transition: .5s;
   margin-right: 4.5svw;
   margin-left: 4.5svw;
-  margin-top: 2vsw; 
+  margin-top: 3.8svw; 
   margin-bottom: 2svw;
 }
 
