@@ -277,6 +277,23 @@
   color: white;
 }
 
+.gameDivs > img{
+  position: relative;
+  width: 20svw;
+  aspect-ratio: .8;
+  transition: .5s;
+}
+
+/* .gameDivs > img{
+  width: 375px;
+  aspect-ratio: 1;
+  transition: .5s;
+  /* border-bottom-style: solid;
+  border-bottom-width: 40px;
+  border-bottom-color: white; 
+  border-radius: 5px;
+} */
+
 .gameDivs:hover{
   width: 21svw;
   aspect-ratio: .8;
@@ -286,6 +303,20 @@
   margin-top: 3.8svw; 
   margin-bottom: 2svw;
 }
+
+.gameDivs:hover > img{
+  width: 21svw;
+  aspect-ratio: .8;
+  transition: .5s;
+}
+
+/* .gameDivs:hover > img{
+  width: 400px;
+  aspect-ratio: 1;
+  transition: .5s;
+  border-radius: 5px;
+} */
+
 
 /*------------------------------------*/
 
