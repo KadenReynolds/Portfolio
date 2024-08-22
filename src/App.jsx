@@ -12,6 +12,8 @@ import Contact from './Pages/Contact'
 
 function App() {
 
+  const [gameID, setGameID] = useState(0)
+
   return (
     <>
       <Navbar/>
@@ -19,8 +21,9 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<AboutMe/>}/>
         <Route path='/websites' element={<Websites/>}/>
-        <Route path='/games' element={<Games/>}/>
+        <Route path='/games' element={<Games setGameID={setGameID}/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/games' element={<Games/>}/>
       </Routes>
     </>
   )
