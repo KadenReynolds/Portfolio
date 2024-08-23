@@ -320,6 +320,58 @@
 
 /*------------------------------------*/
 
+/* Game View */
+
+.gameInfoDiv{
+  margin-top: 5svh;
+  /* position: absolute; */
+}
+
+.gameImg{
+  justify-content: right;
+  /* left: 0; */
+  width: 50svw;
+  aspect-ratio: 1.75;
+}
+
+.gameInfoHeader{
+  position: absolute;
+  left: 25svw;
+}
+
+.gameInfoTable{
+  margin-top: 6svh;
+  border-spacing: 0px;
+}
+
+.gameInfoTable{
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+th, td{
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  padding: 15px;
+}
+
+.downloadButton{
+  margin-bottom: 1svh;
+  width: 15svw;
+  background-color: rgb(25, 173, 25);
+}
+
+.buttonNote{
+  font-size: 9pt;
+}
+
+/*------------------------------------*/
+
 /*Contact*/
 
 #contactDiv{
