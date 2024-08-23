@@ -5,7 +5,6 @@ import { Link } from "react-router-dom"
 
 function Games({myGames}) {
   // const [gamesID, setGamesID] = useState("")
-
   
 
   return(

@@ -1,26 +1,6 @@
 import { useState } from "react"
 
-function Websites() {
-  const [mySites, setMySites] = useState([
-    {
-      id:1,
-      name:"sha",
-      timeCreated:"10 Days",
-      status:"Complete"
-    },
-    {
-      id:2,
-      name:"sha la",
-      timeCreated:"20 Days",
-      status:"Complete"
-    },
-    {
-      id:3,
-      name:"sha la la",
-      timeCreated:"30 Days",
-      status:"In Development"
-    },
-  ])
+function Websites({mySites}) {
   return(
       <>
         <h1 className="pageHeader">Websites</h1>

@@ -17,24 +17,50 @@ function App() {
     {
       id:0,
       name:"Essence",
-      timeCreated:"10 Days",
+      timeCreated:"40 Days",
       status:"Complete",
       gameCatalogImg:"src/assets/Essence.jpg",
-      gameScreenShot:"src/assets/EssenceScreenShot.png"
+      gameScreenShot:"src/assets/EssenceScreenShot.png",
+      donwloadLink: "https://kadenreynolds.itch.io/essence"
     },
     {
       id:1,
-      name:"blah, blah",
+      name:"The Murder of Felix Murphy",
       timeCreated:"20 Days",
-      status:"In Development",
+      status:"Complete",
       gameCatalogImg:"src/assets/TMoFM.jpg",
-      gameScreenShot:""
+      gameScreenShot:"",
+      donwloadLink: "https://kadenreynolds.itch.io/tmofm"
     },
     {
       id:2,
-      name:"blah, blah, blah",
-      timeCreated:"30 Days",
+      name:"Escape The Ship",
+      timeCreated:"5 Days",
+      status:"Complete",
+      gameCatalogImg: "src/assets/ETS.png",
+      gameScreenShot: "",
+      donwloadLink: "https://kadenreynolds.itch.io/escape-the-ship"
+    },
+  ])
+
+  const [mySites, setMySites] = useState([
+    {
+      id:1,
+      name:"sha",
+      timeCreated:"10 Days",
       status:"Complete"
+    },
+    {
+      id:2,
+      name:"sha la",
+      timeCreated:"20 Days",
+      status:"Complete"
+    },
+    {
+      id:3,
+      name:"sha la la",
+      timeCreated:"30 Days",
+      status:"In Development"
     },
   ])
 
@@ -44,7 +70,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<AboutMe/>}/>
-        <Route path='/websites' element={<Websites/>}/>
+        <Route path='/websites' element={<Websites mySites={mySites}/>}/>
         <Route path='/games' element={<Games myGames={myGames}/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/games/:gameID' element={<GameView myGames={myGames}/>}/>

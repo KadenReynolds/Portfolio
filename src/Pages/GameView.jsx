@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom"
 import { useState } from "react";
 import EssenceScreenShot from '../assets/EssenceScreenShot.png'
+import TMoFMScreenShot from '../assets/TMoFMScreenShot.png'
+import ETSScreenShot from '../assets/ETSScreenShot.png'
 
 
 function GameView ({myGames}) {
@@ -10,6 +12,10 @@ function GameView ({myGames}) {
   let gameImg
   if(gameInfo.id === 0){
     gameImg = EssenceScreenShot
+  } else if(gameInfo.id === 1) {
+    gameImg = TMoFMScreenShot
+  } else{
+    gameImg = ETSScreenShot
   }
 
   return(
@@ -34,7 +40,7 @@ function GameView ({myGames}) {
         </tr>
       </table>
       <br />
-      <button className="downloadButton">Download</button>
+      <a href={gameInfo.donwloadLink} className="downloadButton" target="_blank">Download</a>
       <p className="buttonNote">*Note: This button will redirect you to my page on Itch.io to download these games</p>
     </div>
   )
