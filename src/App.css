@@ -216,7 +216,7 @@
 
 .siteDivs{
   width: 20svw;
-  aspect-ratio: .8;
+  aspect-ratio: 2.5;
   background-color: rgb(89, 11, 244);
   margin-right: 5svw;
   margin-left: 5svw;
@@ -230,18 +230,70 @@
   overflow: hidden;
 }
 
-.siteDivs > *{
-  color: white;
+.siteDivs > h3{
+  color: rgb(255, 255, 255);
+  font-size: 30pt;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.siteDivs > h5{
+  color: rgb(255, 255, 255);
+  font-size: 10pt;
 }
 
 .siteDivs:hover{
   width: 21svw;
-  aspect-ratio: .8;
+  aspect-ratio: 2.5;
   transition: .5s;
   margin-right: 4.5svw;
   margin-left: 4.5svw;
   margin-top: 3.8svw; 
   margin-bottom: 2svw;
+}
+
+.siteNote{
+  font-size: 10pt;
+}
+
+/*------------------------------------*/
+
+/* Site View */
+
+.collabList{
+  list-style-type: none;
+}
+
+.collabLinks{
+  color: rgb(119, 0, 255);
+}
+
+.collabsLinkNote{
+  font-size: 10pt;
+}
+
+.visitSiteBtn{
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 1svh;
+  width: 15svw;
+  background-color: rgb(25, 173, 25);
+  color: white;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.visitSiteBtn:hover{
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 1svh;
+  width: 15svw;
+  background-color: rgb(26, 151, 26);
+  color: rgb(2, 90, 161);
+  border-radius: 10px;
+  transition: .3s;
 }
 
 /*------------------------------------*/
@@ -275,6 +327,7 @@
 
 .gameDivs > *{
   color: white;
+  text-decoration: underline;
 }
 
 .gameDivs > img{
@@ -316,6 +369,10 @@
   transition: .5s;
   border-radius: 5px;
 } */
+
+.gameNote{
+  font-size: 10pt;
+}
 
 
 /*------------------------------------*/

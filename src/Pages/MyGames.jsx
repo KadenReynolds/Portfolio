@@ -4,12 +4,12 @@ import { Link } from "react-router-dom"
 
 
 function Games({myGames}) {
-  // const [gamesID, setGamesID] = useState("")
   
 
   return(
     <>
       <h1 className="pageHeader">Games</h1>
+      <p className="siteNote">*Note: Click on a game to view a detailed page</p>
       <div id="gamesMasterDiv">
         {myGames.map((games) => {
           return(

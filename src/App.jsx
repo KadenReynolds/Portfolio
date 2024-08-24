@@ -6,6 +6,7 @@ import './App.css'
 import Navbar from './Components/NavBar'
 import Home from './Pages/Home'
 import Websites from './Pages/MyWebsites'
+import SiteView from './Pages/SiteView'
 import Games from './Pages/MyGames'
 import GameView from './Pages/GameView'
 import AboutMe from './Pages/AboutMe'
@@ -45,20 +46,29 @@ function App() {
 
   const [mySites, setMySites] = useState([
     {
-      id:1,
-      name:"sha",
+      id:0,
+      name:"Craftia",
+      siteType:"E-Commerce Site",
+      description:"Craftia is a E-Commerce prototype site created by me and a few collaborators for our Fullstack Academy Capstone project. On the site you can 'purchase' items to get your craft on, ranging from",
+      collabs:[{Name: "Mason Miller", Link: "https://www.linkedin.com/in/mmiller918/"}, {Name: "Jasmine Henderson", Link: "https://www.linkedin.com/in/0jasmineh/"}, {Name: "Miranda Lucas", Link: "https://www.linkedin.com/in/mirandaklucas/"}, {Name: "Andrew Chitwood", Link: ""}],
       timeCreated:"10 Days",
       status:"Complete"
     },
     {
-      id:2,
+      id:1,
       name:"sha la",
+      siteType:"",
+      description:"",
+      collaborators:[{Name:"None"}],
       timeCreated:"20 Days",
       status:"Complete"
     },
     {
-      id:3,
+      id:2,
       name:"sha la la",
+      siteType:"",
+      description:"",
+      collaborators:[{Name:"None"}],
       timeCreated:"30 Days",
       status:"In Development"
     },
@@ -71,6 +81,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<AboutMe/>}/>
         <Route path='/websites' element={<Websites mySites={mySites}/>}/>
+        <Route path='/websites/:siteID' element={<SiteView mySites={mySites}/>}/>
         <Route path='/games' element={<Games myGames={myGames}/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/games/:gameID' element={<GameView myGames={myGames}/>}/>
