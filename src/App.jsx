@@ -47,30 +47,34 @@ function App() {
   const [mySites, setMySites] = useState([
     {
       id:0,
-      name:"Craftia",
+      name:"Craftify",
       siteType:"E-Commerce Site",
-      description:"Craftia is a E-Commerce prototype site created by me and a few collaborators for our Fullstack Academy Capstone project. On the site you can 'purchase' items to get your craft on, ranging from",
+      description:"Craftify is a E-Commerce prototype site created by me and a few collaborators for our Fullstack Academy Capstone project. On the site you can 'purchase' items to get your craft on, ranging from",
       collabs:[{Name: "Mason Miller", Link: "https://www.linkedin.com/in/mmiller918/"}, {Name: "Jasmine Henderson", Link: "https://www.linkedin.com/in/0jasmineh/"}, {Name: "Miranda Lucas", Link: "https://www.linkedin.com/in/mirandaklucas/"}, {Name: "Andrew Chitwood", Link: ""}],
-      timeCreated:"10 Days",
-      status:"Complete"
+      timeCreated:"14 Days",
+      status:"Complete",
+      hostingStatus:"Not Hosted",
+      siteImg:"src/assets/CraftifyProducts.png"
     },
     {
       id:1,
-      name:"sha la",
-      siteType:"",
-      description:"",
-      collaborators:[{Name:"None"}],
-      timeCreated:"20 Days",
-      status:"Complete"
+      name:"QusetLine",
+      siteType:"Online Sidequesting Site",
+      description:"Qusetline is being built to expand the art of playing games with friends, me and my friend are developing this site that will give more flare to multiplayer and singleplayer games by allowing you to 'battle' your friends. You recieve a task from qusetline to do in the game your playing and then you and up to 3 friends race to complete the task, earning points depending on many different variables such as: time completed, difficulty, length of task, etc.",
+      collabs:[{Name:"Jett Crowther", Link:"https://www.linkedin.com/in/jett-crowther/"}],
+      timeCreated:"In-Development",
+      status:"In-Development",
+      hostingStatus:"Not Hosted"
     },
     {
       id:2,
       name:"sha la la",
       siteType:"",
       description:"",
-      collaborators:[{Name:"None"}],
+      collabs:[{Name:"N/A", Link:""}],
       timeCreated:"30 Days",
-      status:"In Development"
+      status:"In Development",
+      hostingStatus:"Not Hosted"
     },
   ])
 

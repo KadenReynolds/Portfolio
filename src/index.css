@@ -26,7 +26,7 @@ body {
   margin: 0;
   display: flex;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 155vh;
   background-color: rgb(247, 241, 254);
 }
 
@@ -64,5 +64,11 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+@media (min-width:768px) {
+  #body{
+    min-height: 100vh;
   }
 }

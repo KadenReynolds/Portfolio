@@ -256,9 +256,34 @@
   font-size: 10pt;
 }
 
+@media only screen and (max-width:768px){
+  .siteDivs{
+    width: 35svw;
+    aspect-ratio: 1;
+  }
+  .siteDivs > h3{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    text-decoration: underline;
+    margin-bottom: 0;
+  }
+}
+
 /*------------------------------------*/
 
 /* Site View */
+
+.siteDesc{
+  overflow-x: hidden;
+  text-wrap: 50svw;
+}
+
+.siteImg{
+  justify-content: right;
+  /* left: 0; */
+  width: 50svw;
+  aspect-ratio: 1.75;
+}
 
 .collabList{
   list-style-type: none;
@@ -272,7 +297,14 @@
   font-size: 10pt;
 }
 
+/* .visitSiteUnavailable{
+  /* position: absolute;
+  /* margin-top: 5svh; 
+} */
+
 .visitSiteBtn{
+  /* position: absolute;
+  margin-top: 35svh; */
   padding: 10px;
   padding-left: 40px;
   padding-right: 40px;
@@ -294,6 +326,57 @@
   color: rgb(2, 90, 161);
   border-radius: 10px;
   transition: .3s;
+}
+
+
+.siteInfoHeader{
+  /* position: absolute;
+  left: 45%;
+  text-align: center; */
+  margin-top: 4svh;
+}
+
+.siteInfoTable{
+  /* margin-left: 20svw; */
+  /* position: absolute;
+  left: 25svw; */
+  margin-left: 31%;
+  margin-top: 1svh;
+  border-spacing: 0px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+th, td{
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: black;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  padding: 15px;
+}
+
+@media only screen and (max-width:768px){
+  .siteInfoTable{
+    margin-left: 0%;
+    margin-top: 1svh;
+  }
+  .siteDesc{
+    margin-right: 2svw;
+    font-size: 10pt;
+  }
+  
+  .siteViewDiv{
+    position: absolute;
+    margin-left: 0;
+    left: 0;
+  }
+
+  #body{
+    min-height: 150vh;
+  }
 }
 
 /*------------------------------------*/
@@ -372,6 +455,18 @@
 
 .gameNote{
   font-size: 10pt;
+}
+
+@media only screen and (max-width:768px){
+  .gameDivs{
+    width: 35svw;
+    aspect-ratio: .8;
+  }
+  .gameDivs > *{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    text-decoration: underline;
+  }
 }
 
 

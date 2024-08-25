@@ -1,14 +1,19 @@
 import { useParams } from "react-router-dom"
 import { useState } from "react";
-import EssenceScreenShot from '../assets/EssenceScreenShot.png'
-import TMoFMScreenShot from '../assets/TMoFMScreenShot.png'
-import ETSScreenShot from '../assets/ETSScreenShot.png'
+import CraftifyProducts from '../assets/CraftifyProducts.png'
 
 
 function SiteView ({mySites}) {
   const {siteID} = useParams();
   let siteInfo = mySites[siteID]
-  console.log(siteInfo.description)
+  let siteImg
+  if(siteInfo.id === 0){
+    siteImg = CraftifyProducts
+  } else if(siteInfo.id === 1) {
+    siteImg = ""
+  } else{
+    siteImg = ""
+  }
 
   return(
     <div className="siteViewDiv">
@@ -17,8 +22,10 @@ function SiteView ({mySites}) {
       <h4>{siteInfo.siteType}</h4>
       <br />
       <br />
-      <p>"{siteInfo.description}"</p>
+      <p className="siteDesc">"{siteInfo.description}"</p>
       <br />
+      <br />
+      <img src={siteImg} alt="Photo Not Available" className="siteImg" />
       <br />
       <ul className="collabList">
         <h3>Collaborators:</h3>
@@ -37,7 +44,34 @@ function SiteView ({mySites}) {
         <p className="collabsLinkNote">*Note: Clicking on link (if avaliable) will lead to collaborators LinkedIn Page</p>
       </ul>
       <br />
-      <a  className="visitSiteBtn">Visit Site</a>
+      <div className="tableDiv">
+        <h3 className="siteInfoHeader">Site Info:</h3>
+        <table className="siteInfoTable">
+          <tr>
+          </tr>
+          <tr>
+            <th>Development Time</th>
+            <br />
+            <th>Status</th>
+            <br />
+            <th>Hosting Status</th>
+          </tr>
+          <tr>
+            <td>{siteInfo.timeCreated}</td>
+            <br />
+            <td>{siteInfo.status}</td>
+            <br />
+            <td>{siteInfo.hostingStatus}</td>
+         </tr>
+        </table>
+        <br />
+        {siteInfo.hostingStatus !== "Not Hosted"
+          ?
+          <a  className="visitSiteBtn">Visit Site</a>
+          :
+          <p className="visitSiteUnavailable">*Site is not available at this time*</p>
+        }
+      </div>
     </div>
   )
 }
