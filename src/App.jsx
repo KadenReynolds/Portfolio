@@ -10,7 +10,7 @@ import SiteView from './Pages/SiteView'
 import Games from './Pages/MyGames'
 import GameView from './Pages/GameView'
 import AboutMe from './Pages/AboutMe'
-import Contact from './Pages/Contact'
+import ContactFooter from './Components/ContactFooter'
 
 function App() {
 
@@ -87,9 +87,10 @@ function App() {
         <Route path='/websites' element={<Websites mySites={mySites}/>}/>
         <Route path='/websites/:siteID' element={<SiteView mySites={mySites}/>}/>
         <Route path='/games' element={<Games myGames={myGames}/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        {/* <Route path='/contact' element={<Contact/>}/> */}
         <Route path='/games/:gameID' element={<GameView myGames={myGames}/>}/>
       </Routes>
+      <ContactFooter/>
     </>
   )
 }

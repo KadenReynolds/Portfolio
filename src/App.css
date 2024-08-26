@@ -103,6 +103,48 @@
 .navbar > .links:hover{
   background-color: rgb(80, 12, 218);
 }
+
+@media only screen and (max-width:768px){
+  .navbarDiv{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(247, 241, 254);
+    z-index: 1;
+    width: 100%;
+    height: 10svh;
+    border-bottom: 2px solid black;
+  }
+
+  .navHeader{
+    opacity: 0;
+    z-index: 0;
+    width: 0;
+    aspect-ratio: 1;
+  }
+  .navbar{
+    position: fixed;
+    height: 5svh;
+    left: 0%;
+    top: 0px;
+    z-index: 1;
+    padding: 15px;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 40px;
+    /* border-bottom: 2px solid black; */
+  }
+
+  .navbar > .links{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: rgb(89, 11, 244);
+    color: rgb(247, 241, 254);
+    font-weight: 500;
+  }
+}
 /*------------------------------------*/
 
 /*About Me!*/
@@ -224,7 +266,7 @@
   margin-bottom: 3.5svw;
   border-radius: 10px;
   border-bottom-style: solid;
-  border-bottom-width: 15px;
+  border-bottom-width: 5px;
   border-bottom-color: rgb(75, 9, 206);
   transition: .5s;
   overflow: hidden;
@@ -384,40 +426,47 @@ th, td{
 /*MyGames*/
 
 #gamesMasterDiv{
-  width: 100%;
+  position: absolute;
+  width: 70%;
+  aspect-ratio: 1.2;
   margin: 0;
-  left: 0;
+  left: 20svw;
   display: grid;
-  grid-template-columns: 50% 45%;
-  grid-template-rows: 50% 45%;
+  grid-template-columns: 44% 44%;
+  grid-template-rows: 44% 44%;
+  overflow-x: hidden;
 }
 
 .gameDivs{
-  width: 20svw;
-  aspect-ratio: .8;
-  background-color: rgb(89, 11, 244);
-  margin-right: 5svw;
-  margin-left: 5svw;
-  margin-top: 3.5svw; 
+  width: 30svw;
+  aspect-ratio: 1.2;
+  background-color: rgba(0, 0, 0, 1);
+  /* margin-right: 5svw; 
+  margin-left: 5svw; */
   margin-bottom: 3.5svw;
+  margin-top: 3.5svw; 
   border-radius: 10px;
-  border-bottom-style: solid;
+  /* border-bottom-style: solid;
   border-bottom-width: 15px;
-  border-bottom-color: rgb(75, 9, 206);
+  border-bottom-color: rgb(75, 9, 206); */
   transition: .5s;
   overflow: hidden;
 }
 
-.gameDivs > *{
-  color: white;
-  text-decoration: underline;
-}
-
 .gameDivs > img{
   position: relative;
-  width: 20svw;
-  aspect-ratio: .8;
+  width: 30svw;
+  aspect-ratio: 1.2;
   transition: .5s;
+  opacity: 1;
+}
+
+.gameDivs:hover > img{
+  position: relative;
+  width: 30svw;
+  aspect-ratio: 1.2;
+  transition: .5s;
+  opacity: .5;
 }
 
 /* .gameDivs > img{
@@ -430,7 +479,7 @@ th, td{
   border-radius: 5px;
 } */
 
-.gameDivs:hover{
+/* .gameDivs:hover{
   width: 21svw;
   aspect-ratio: .8;
   transition: .5s;
@@ -444,7 +493,7 @@ th, td{
   width: 21svw;
   aspect-ratio: .8;
   transition: .5s;
-}
+} */
 
 /* .gameDivs:hover > img{
   width: 400px;
@@ -466,6 +515,18 @@ th, td{
     color: rgb(255, 255, 255);
     font-size: 15pt;
     text-decoration: underline;
+  }
+
+  #gamesMasterDiv{
+    position: absolute;
+    width: 100%;
+    aspect-ratio: .8;
+    margin: 0;
+    left: 15svw;
+    display: grid;
+    grid-template-columns: 44% 44%;
+    grid-template-rows: 40% 40% 40%;
+    overflow-x: hidden;
   }
 }
 
@@ -544,17 +605,32 @@ th, td{
 
 /*Contact*/
 
-#contactDiv{
-  /* background-color: white; */
-  /* padding-top: 10px; */
-  border-radius: 10px;
+#contactSpan{
+  display: inline;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5svh;
+  color: rgb(89, 11, 244);
+  background-color: rgb(231, 225, 238);
+  padding: 5px;
+  justify-content: center;
+  font-size: 10pt;
 }
 
-.horizontalRow{
-  line-height: 50%;
-}
 .contactLink{
-  color: rgb(89, 11, 244);
+  text-align: center;
+  display: inline;
+  width: 10svw;
+  right: 0;
+  margin-bottom: 1svh;
+  margin-left: 3svw;
+  margin-top: 1svh;
+}
+
+#contactSpan > h4{
+  display: inline;
 }
 
 /*------------------------------------*/
@@ -562,9 +638,8 @@ th, td{
 /*Footer*/
 
 .footer{
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: 0;
   margin: 0;
   width: 100%;
   aspect-ratio: 20;

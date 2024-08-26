@@ -23,10 +23,10 @@ function AboutMe() {
         </div>
       </div>
 
-      <footer className="footer">
+      {/* <footer className="footer">
         Any questions? Want to learn more about me and my projects? Please contact me here:
         <a onClick={contactClick} id="linkToContact"> Contact</a>
-      </footer>
+      </footer> */}
     </>
   )
 }

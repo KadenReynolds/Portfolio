@@ -15,8 +15,7 @@ function Games({myGames}) {
           return(
             <Link to={`/games/${games.id}`} key={games.id} className="gameLinks">
               <div className="gameDivs">
-                <h2>{games.name}</h2>
-                <img src={games.gameCatalogImg} alt="hello" />
+                <img src={games.gameCatalogImg} alt="hello"/>
               </div>
             </Link>
           )
