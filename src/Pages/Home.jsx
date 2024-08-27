@@ -35,6 +35,12 @@ function Home() {
           <img src={AboutHome} alt="" className='homeImg'/>
         </div>
       </div>
+      <br />
+      <br />
+      <div className='aspirationsDiv'>
+        <h2 className='aspirationsHeader'>Aspirations</h2>
+        <p>My aspirations is to become either a Fullstack Web Developer or a Game Engineer/Developer, but I would also enjoy a Embedded Systems Engineer, although anything tech would be enjoyable. My short-term goal is to get a job within the industry and to start building upon my accolades and skills while continuing to improve my projects going forward. My long-term goals are to either join a company with a model I can get behind or start my own game development studio. </p>
+      </div>
     </>
   )
 }
