@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  /* margin: 0; */
 }
 
 .logo {
@@ -44,6 +45,7 @@
 /*All*/
 
 .pageHeader{
+  /* margin-left: 40svw; */
   margin-top: 8svw;
   color: rgb(11, 1, 24);
   font-family:'Courier New', Courier, monospace;
@@ -56,6 +58,53 @@
 }
 
 /*------------------------------------*/
+
+/*Home*/
+.homeMasterDiv{
+  margin-top: 10svh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50.25% 50.25%;
+  grid-template-rows: 50.50% 50.50%;
+}
+
+.homeDivs{
+  position: relative;
+  background-color: black;
+  width: 30svw;
+  aspect-ratio: 2;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.homeImg{
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  width: 30svw;
+  aspect-ratio: 2;
+  opacity: 1;
+  transition: .3s;
+}
+
+.homeNames{
+  /* width: 30svw;
+  aspect-ratio: 2; */
+  text-align: center;
+  margin-top: 20%;
+  margin-bottom: 0;
+  z-index: 1;
+  color: white;
+}
+
+.homeDivs:hover > .homeImg{
+  opacity: .25;
+  transition: .3s;
+}
+
+/*------------------------------------*/
+
 
 /*NavBar*/
 .navbarDiv{

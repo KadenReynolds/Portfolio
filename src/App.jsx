@@ -66,17 +66,7 @@ function App() {
       timeCreated:"In-Development",
       status:"In-Development",
       hostingStatus:"Not Hosted"
-    },
-    {
-      id:2,
-      name:"sha la la",
-      siteType:"",
-      description:"",
-      collabs:[{Name:"N/A", Link:""}],
-      timeCreated:"30 Days",
-      status:"In Development",
-      hostingStatus:"Not Hosted"
-    },
+    }
   ])
 
   return (
