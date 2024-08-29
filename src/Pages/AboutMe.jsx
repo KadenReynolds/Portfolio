@@ -15,7 +15,7 @@ function AboutMe() {
         </div>
         <div id="workDiv">
           <h3>Work</h3>
-          <p>I have completed plenty of accolades for both Fullstack Web Development and Game Development and I feel I'm ready to get into the industry. I have completed plenty of game and website projects that you can see and even download/visit in the subsequent pages. Some of my more notable accolades include, a 3-month bootcamp through CSU and Fullstack Academy for web-development, at least 6 language certificates from both Sololearn and Codecademy, and I am now in progress to earn my certificate in the Comptia ITF+ exam to become an IT Professional.</p>
+          <p>I have completed plenty of accolades for both Fullstack Web Development and Game Development and I feel I'm ready to get into the industry. I have completed plenty of game and website projects that you can see and even download/visit in the subsequent pages. Some of my more notable accolades include, a 3-month bootcamp through CSU and Fullstack Academy for web-development, at least 6 language certificates from both Sololearn and Codecademy, and I have passed the Comptia ITF+ exam to become an IT Professional.</p>
         </div>
         <div id="selfDiv">
           <h3>600+ Hours...</h3>

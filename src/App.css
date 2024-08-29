@@ -349,18 +349,21 @@
 #masterDiv{
   width: 100%;
   aspect-ratio: .2;
-  position: relative;
-  display: flexbox;
+  /* position: absolute; */
+  /* left: 0; */
+  display: grid;
+  grid-template-columns: 52% 55%;
+  grid-template-rows: 7% 50%;
   margin-top: 5svh;
 }
 
 #backgroundDiv{
   padding: 20px;
-  width: 40svw;
+  width: 30svw;
   aspect-ratio: 5;
-  top: 0svh;
+  /* top: 0svh;
   left: -37svw;
-  position: absolute;
+  position: absolute; */
   background-color: rgb(248, 119, 143);
   text-wrap:pretty;
   border-radius: 20px;
@@ -382,11 +385,11 @@
 
 #workDiv{
   padding: 20px;
-  width: 40svw;
+  width: 30svw;
   aspect-ratio: 5;
-  top: 0svh;
+  /* top: 0svh;
   left: 7svw;
-  position: absolute;
+  position: absolute; */
   background-color: rgb(89, 11, 244);
   text-wrap:pretty;
   border-radius: 20px;
@@ -405,13 +408,14 @@
   font-size: 20pt;
   text-transform: uppercase;
 }
+
 #selfDiv{
   padding: 20px;
-  width: 40svw;
-  aspect-ratio: 4;
-  top: 40svh;
+  width: 69svw;
+  aspect-ratio: 6;
+  /* top: 40svh;
   left: -15svw;
-  position: absolute;
+  position: absolute; */
   background-color: rgb(246, 141, 81);
   text-wrap:pretty;
   border-radius: 20px;
@@ -433,6 +437,93 @@
   text-transform: uppercase;
   margin-bottom:0;
   margin-top: 3svh;
+}
+
+@media only screen and (max-width:768px){
+  #masterDiv{
+    width: 70%;
+    aspect-ratio: .2;
+    /* position: absolute; */
+    /* left: 0; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 38.75% 41%;
+    margin-top: 5svh;
+    margin-bottom: 10svh;
+  }
+
+  #backgroundDiv{
+    padding: 20px;
+    width: 65svw;
+    aspect-ratio: 4;
+    /* top: 0svh;
+    left: -37svw;
+    position: absolute; */
+    background-color: rgb(248, 119, 143);
+    text-wrap:pretty;
+    border-radius: 20px;
+  }
+  #backgroundDiv > p{
+    color: black;
+    font-weight: 500;
+    font-size: 10pt;
+  }
+
+  #backgroundDiv > h3{
+    color: black;
+    font-family: Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 15pt;
+    text-transform: uppercase;
+  }
+
+  #workDiv{
+    padding: 20px;
+    width: 65svw;
+    aspect-ratio: 4;
+    /* top: 0svh;
+    left: 7svw;
+    position: absolute; */
+    background-color: rgb(89, 11, 244);
+    text-wrap:pretty;
+    border-radius: 20px;
+  }
+  
+  #workDiv > p{
+    color: white;
+    font-weight: lighter;
+    font-size: 10pt;
+  }
+
+  #selfDiv{
+    padding: 20px;
+    width: 65svw;
+    aspect-ratio: 3;
+    /* top: 40svh;
+    left: -15svw;
+    position: absolute; */
+    background-color: rgb(246, 141, 81);
+    text-wrap:pretty;
+    border-radius: 20px;
+  }
+  
+  #selfDiv > p{
+    color: white;
+    font-weight: lighter;
+    font-size: 10pt;
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  #selfDiv > h3{
+    color: white;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    text-transform: uppercase;
+    margin-bottom:0;
+    margin-top: 3svh;
+  }
 }
 
 /*------------------------------------*/
@@ -856,4 +947,79 @@ th, td{
   display: inline;
 }
 
+@media only screen and (max-width:768px){
+  #contactSpan{
+    display: inline;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 93%;
+    height: 12svh;
+    color: rgb(89, 11, 244);
+    background-color: rgb(231, 225, 238);
+    padding: 5px;
+    justify-content: center;
+    font-size: 10pt;
+  }
+
+  .contactLink{
+    text-align: center;
+    display: inline;
+    width: 15svw;
+    right: 0;
+    margin-bottom: 1svh;
+    margin-left: 3svw;
+    margin-top: 1svh;
+    font-size: 8pt;
+  }
+
+  #contactSpan > h4{
+    display: inline;
+    font-size: 8pt;
+  }
+}
+
 /*------------------------------------*/
+
+/* Media Query for tablets/phones with higher resolution */
+
+@media only screen and (min-width:768px) and (max-width:1500px) {
+  #masterDiv{
+    margin-left: 10svw;
+    width: 100%;
+    aspect-ratio: .2;
+    /* position: absolute; */
+    /* left: 0; */
+    display: grid;
+    grid-template-columns: 39% 40%;
+    grid-template-rows: 12% 40%;
+    margin-top: 5svh;
+  }
+}
+
+@media only screen and (width:820px) {
+  #masterDiv{
+    margin-left: 10svw;
+    width: 100%;
+    aspect-ratio: .2;
+    /* position: absolute; */
+    /* left: 0; */
+    display: grid;
+    grid-template-columns: 39% 40%;
+    grid-template-rows: 16.5% 40%;
+    margin-top: 5svh;
+  }
+  .navbar{
+    position: fixed;
+    width: 70svw;
+    height: 3svh;
+    left: 25%;
+    top: 15px;
+    z-index: 1;
+    padding: 15px;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 40px;
+    /* border-bottom: 2px solid black; */
+  }
+}
