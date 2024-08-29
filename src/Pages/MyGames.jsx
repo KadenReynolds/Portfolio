@@ -1,10 +1,24 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import Essence from '../assets/Essence.jpg'
+import TMoFM from '../assets/TMoFM.jpg'
+import ETS from '../assets/ETS.png'
 
 
 
 function Games({myGames}) {
-  
+  let gameImg
+
+  function findGameImg(games){
+    if (games.name === "Essence"){
+      gameImg = Essence
+    } else if (games.name === "Escape The Ship") {
+      gameImg = ETS
+    } else {
+      gameImg = TMoFM
+    }
+    return gameImg
+  }
 
   return(
     <>
@@ -15,7 +29,7 @@ function Games({myGames}) {
           return(
             <Link to={`/games/${games.id}`} key={games.id} className="gameLinks">
               <div className="gameDivs">
-                <img src={games.gameCatalogImg} alt="hello"/>
+                <img src={findGameImg(games)} alt="hello"/>
               </div>
             </Link>
           )
