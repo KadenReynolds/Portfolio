@@ -8,9 +8,7 @@ import { useNavigate } from 'react-router-dom'
 function Home() {
   let navigate = useNavigate();
 
-
-  let handleClick = (path) => {
-    console.log(path)
+  function handleClick(path){
     navigate(path)
   }
 
@@ -18,22 +16,22 @@ function Home() {
     <>
       <h1 className="pageHeader">Home</h1>
       <div className="homeMasterDiv">
-        <div className="homeDivs" onClick={event =>  location.href='/websites'}>
-          <h2 className="homeNames">Websites</h2>
+        <button className="homeDivs" onClick={() => {handleClick('/websites')}}>
+          <h2 className="homeNames" href='/websites'>Websites</h2>
           <img src={pexelsmarkusspiske} alt="" className='homeImg'/>
-        </div>
-        <div className="homeDivs" onClick={event =>  window.location.href='/games'}>
+        </button>
+        <button className="homeDivs" onClick={() => {handleClick('/games')}}>
           <h2 className="homeNames">Games</h2>
           <img src={pexelsjeswin} alt="" className='homeImg'/>
-        </div>
-        <div className="homeDivs" onClick={event =>  window.location.href='/accolades'}>
+        </button>
+        <button className="homeDivs" onClick={() => {handleClick('/accolades')}}>
           <h2 className="homeNames">Accolades</h2>
           <img src={AccoladesHome} alt="" className='homeImg'/>
-        </div>
-        <div className="homeDivs" onClick={event =>  window.location.href='/about'}>
+        </button>
+        <button className="homeDivs" onClick={() => {handleClick('/about')}}>
           <h2 className="homeNames">About Me</h2>
           <img src={AboutHome} alt="" className='homeImg'/>
-        </div>
+        </button>
       </div>
       <br />
       <br />
