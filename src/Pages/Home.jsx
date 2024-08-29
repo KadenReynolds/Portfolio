@@ -18,7 +18,7 @@ function Home() {
     <>
       <h1 className="pageHeader">Home</h1>
       <div className="homeMasterDiv">
-        <div className="homeDivs" onClick={event =>  window.location.href='/websites'}>
+        <div className="homeDivs" onClick={event =>  location.href='/websites'}>
           <h2 className="homeNames">Websites</h2>
           <img src={pexelsmarkusspiske} alt="" className='homeImg'/>
         </div>
